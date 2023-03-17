@@ -13,7 +13,7 @@ const getBotReply = (msg) => {
     level = 1
     return "Hi, human ... what's your name?";
 }
-  if (level === 1 && rememberedName === undefined) {
+  if (level === 1) {
     level = 2
     rememberedName = msg;
     return `Nice to meet you ${rememberedName}! Are you looking for a vegan or a regular option?`;
