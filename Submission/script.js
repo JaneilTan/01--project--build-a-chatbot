@@ -12,7 +12,7 @@ const getBotReply = (msg) => {
   if (msg === "reset") {
     level = 1
     return "Hi, human ... what's your name?";
-}
+  }
   if (level === 1) {
     level = 2
     rememberedName = msg;
@@ -69,7 +69,7 @@ const getBotReply = (msg) => {
       return "One-pan seafood roast with smoky garlic butter Ingredients: Baby potatoes, olive or rapeseed oil, corn cobs, large prawns, heads and shells on mussels or large clams (or a mixture) medium squids with tentacles, butter, small bunch parsley, smoked paprika, garlic cloves, crushed lemon, ring chorizo,";
     }
     else {
-        return "You entered an invalid input type 'reset'".
+        return "You entered an invalid input type 'reset'";
     }
   }
 }
