@@ -36,7 +36,7 @@ describe("getBotReply", () => {
 
   it("should reply with the vegan option 2 question", () => {
    // Input: "name"
-   const botReply1 = getBotReply("");
+   const botReply1 = getBotReply("Jan");
    // Output: "Nice to meet you Jan! Are you looking for a vegan or a regular option?"
    const expectedReply1 = "Nice to meet you Jan! Are you looking for a vegan or a regular option?";
    expect(botReply1).toEqual(expectedReply1);
@@ -59,7 +59,7 @@ describe("getBotReply", () => {
 
   it("should reply with the vegan wrap option", () => {
    // Input: "name"
-   const botReply1 = getBotReply();
+   const botReply1 = getBotReply("Jan");
    // Output: "Nice to meet you Jan! Are you looking for a vegan or a regular option?"
    const expectedReply1 = "Nice to meet you Jan! Are you looking for a vegan or a regular option?";
    expect(botReply1).toEqual(expectedReply1);
@@ -77,7 +77,7 @@ describe("getBotReply", () => {
 
   it("should reply with the regular option", () => {
   // Input: "name"
-  const botReply1 = getBotReply();
+  const botReply1 = getBotReply("Jan");
   // Output: "Nice to meet you Jan! Are you looking for a vegan or a regular option?"
   const expectedReply1 = "Nice to meet you Jan! Are you looking for a vegan or a regular option?";
   expect(botReply1).toEqual(expectedReply1);
