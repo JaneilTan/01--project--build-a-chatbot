@@ -57,7 +57,7 @@ const getBotReply = (msg) => {
     
   }
   if (level === 4) {
-    
+    level = 5;
     if (msg === "1a") {
       
       return "Paleo Active Greens Salad Ingredients: Shredded beetroot, carrot, toasted maple nut mix, avocado, red cabbage, cucumber, field greens, balsamic dressing.";
@@ -77,6 +77,14 @@ const getBotReply = (msg) => {
   }
   else {
     return "You entered an invalid input type 'reset'";
+}
+if (level === 5) {
+  if (msg === String) {
+    return "Please enter 'reset'";
+  }
+  else {
+    return "Please enter 'reset'";
+  }
 }
 }   
     
